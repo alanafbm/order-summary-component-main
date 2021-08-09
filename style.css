@@ -1,0 +1,26 @@
+.root {
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --ff-primary: 'Red Hat Display', sans-serif;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 50%;
+    background-color: white
+}
