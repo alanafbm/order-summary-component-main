@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
-<div class="wrapper">
-  <section class="card">
-  <img src="./images/illustration-hero.svg" alt="illustration-hero">
-  <h1>Order Summary</h1>
-  <p class="font-size">  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!</p>
-  <div class="container">
-    <img src="./images/icon-music.svg" alt="icon-music">
-    <div>
-      <h2 class="font-size">Annual Plan</h2>
-      <p class="font-size">$59.99/year</p>
-    </div>
-    <button>Change</button>
+  <div class="wrapper">
+    <section class="card">
+      <img src="./images/illustration-hero.svg" alt="illustration-hero">
+      <h1 class="card-font">Order Summary</h1>
+      <p class="card-text"> You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+      <div class="card-subscription">
+        <img class="card-subscription-image" src="./images/icon-music.svg" alt="icon-music">
+        <div>
+          <h2 class="card-subscription-h2">Annual Plan</h2>
+          <p class="card-subscription-p">$59.99/year</p>
+        </div>
+        <a href="" class="card-subscription-change">Change</a>
+        </div>
+      <button class="card-button-payment">
+        <h3>Proceed to Payment</h3>
+      </button>
+    <a href="" class="card-button-cancel">Cancel Order</a>
+    </section>
   </div>
-  <button class="font-size">Proceed to Payment</button>
-  <button class="font-size">Cancel Order</button>
-  </section>
-</div>
-  <br>
-  <br>
-  <br>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Alana Moraes</a>.
-  </div>
+
 </body>
+
 </html>

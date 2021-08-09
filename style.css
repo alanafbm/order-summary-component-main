@@ -1,26 +1,111 @@
-.root {
+:root {
     --clr-pale-blue: hsl(225, 100%, 94%);
     --clr-bright-blue: hsl(245, 75%, 52%);
     --clr-very-pale-blue: hsl(225, 100%, 98%);
     --clr-desaturated-blue: hsl(224, 23%, 55%);
     --clr-dark-blue: hsl(223, 47%, 23%);
-    --ff-primary: 'Red Hat Display', sans-serif;
+    --ff-primary:'Red Hat Display', sans-serif;
 
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
 .wrapper {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url('./images/pattern-background-desktop.svg');
-	background-position: 100% 100%;
+	background-position: 0% 0%;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-
+	background-size: 100% 50%;
+    background-color: var(--clr-pale-blue);
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 450px;
-    height: 50%;
-    background-color: white
+    height: 650px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: var(--clr-desaturated-blue) 0px 10px 25px -8px;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-font {
+    font-size: 25px bold;
+    color: var(--clr-dark-blue); 
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: 900;
+}
+
+.card-text {
+    text-align: center;
+    padding: 0 60px;
+    color: var(--clr-desaturated-blue);
+    margin-bottom: 25px;
+}
+
+.card-subscription {
+    display: flex;
+    background-color: var(--clr-very-pale-blue);
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    padding:20px;
+}
+
+.card-subscription-image {
+    padding-right: 25px;
+}
+
+.card-subscription-h2 {
+ color: var(--clr-dark-blue); 
+ text-align: left;
+ font-size: 16px;
+ padding-right: 90px;
+ padding-bottom: 5px;
+}
+
+.card-subscription-p {
+    color: var(--clr-desaturated-blue);
+}
+
+.card-subscription-change {
+    border: none;
+    color: var(--clr-bright-blue);
+}
+
+.card-button-payment {
+    background-color: var(--clr-bright-blue);
+    width: 80%;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: var(--clr-desaturated-blue) 0px 10px 25px -5px;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.card-button-cancel {
+  color: var(--clr-desaturated-blue);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
 }
