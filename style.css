@@ -38,7 +38,7 @@
     box-shadow: var(--clr-desaturated-blue) 0px 10px 25px -8px;
 }
 
-img {
+.card-img {
     border-radius: 20px 20px 0 0;
 }
 
@@ -66,7 +66,7 @@ img {
     padding:20px;
 }
 
-.card-subscription-image {
+.card-subscription-icon {
     padding-right: 25px;
 }
 
@@ -100,12 +100,53 @@ img {
 
 h3 {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .card-button-cancel {
   color: var(--clr-desaturated-blue);
   text-decoration: none;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+@media (max-width:768px)  {
+    .wrapper .card {
+        width: 330px;
+        height: 500px;
+
+    }
+    .wrapper .card-img {
+        width: 330px;
+        height: 250px;
+    }
+    .font-size-media {
+        font-size: 13px;
+    }
+    .card-font {
+        margin: 15px;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .card-text {
+        padding: 0px 40px;
+        font-size: 15px;
+    }
+    .card-subscription {
+        padding:15px;
+    }
+    .card-subscription-h2 {
+        padding: 0 10px 5px 0;
+    }
+    .card-subscription-change {
+        margin-left: 30px;
+    }
+    .card-button-payment {
+        margin: 15px 20px 10px 20px;
+    }
+    .card-button-cancel {
+        margin: 10px 0px 20px 0px;
+   
+    }
+
 }
